@@ -1833,7 +1833,7 @@ Dygraph.prototype.generateLegendHTML_ = function(x, sel_points, oneEmWidth) {
     var cls = (pt.name == this.highlightSet_) ? " class='highlight'" : "";
     // TODO(danvk): use a template string here and make it an attribute.
     html += "<span" + cls + ">" + " <b><span style='color: " + c + ";'>" + pt.name +
-        "</span></b>:" + yval + "</span>";
+        ":</span></b>" + yval + "</span>";
   }
   return html;
 };
